@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Hardik Bora</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Hardik Bora</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-PhotoRoom.png" alt="Hardik Bora profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Hardik Bora</h1>
+        <p class="section__text__p2">Engineerning Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/newcv_oct (1).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hardik-bora/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/harvisbora'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/linkedin.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/bvp.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Bharati Vidyapeeth’s College of Engineering</h3>
+              <p>B.Tech Technology Information <br />2020-24</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/ahlcon.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Ahlcon Public School</h3>
+              <p>CBSE XII, 2020<br> CBSE X, 2018</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi I am Hardik a final year Student at Bharati Vidyapeeth’s College of Engineering New Delhi and I love to build Products. Being a creative problem solver at heart and technology enthusiast, I love to play and experiment with the latest developments in technology. Be it Cloud, AR, VR, or AI, you name it!
+              I am a die hard Madridista I love to play and watch football  and on the weekends, you can catch me hitting top-corners on the turf. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Past</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/becl1.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Industrial Engineering Intern </h3>
+                  <p>BECIL Under Ministry of Information and Broadcasting</p>
+                  <li>Conducted research and wrote reports on IoT security issues, proposing the use of ML/AI to address
+                    them and analyzing various techniques used globally for IoT protection.</li>
+                  <li>Worked on the implementation of IoTs in different sectors of Indian society as part of the government’s
+                    "Smart City Abhigyan" initiative.</li>
+                   
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Position of Responsibility</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/ahlcon.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Head Boy</h3>
+                  <p>Ahlcon Public School</p>
+                  <li>Headed the School Prefectorial Board and was the school representative</li>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/silico.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>President</h3>
+                  <p>Silico Battles</p>
+                  <li>Involved in organizing inter-school events, including Silico Battles - one of the biggest school-level tech fests across Delhi-NCR.</li>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/IEEE-Logo.jpg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Chairperson CS</h3>
+                  <p>IEEE BVCOE</p>
+                  <li>Leading a team of 70+ members for sessions and hackathons attended by an audience of 1000+ students</li>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unnati.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Unnati</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harvisbora/Unnati_CBS'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/patwari.png"
+                alt="PatwariChain"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PatwariChain</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harvisbora/PatwariChain'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/researchbuddy.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">ResearchBuddy</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harvisbora/ResearchBuddy'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hardik.12bora@gmail.com">hardik.12bora@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hardik-bora/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Hardik Bora. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
